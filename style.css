@@ -1,0 +1,22 @@
+.index-page{
+    background: radial-gradient(#17c47380, #00000099), url(images/bg-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bank-page{
+    background: radial-gradient(#17c47380, #000000ea), url(images/bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pw-page{
+    background: radial-gradient(#17c47380, #000000ea), url(images/bg-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}

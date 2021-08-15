@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Bank</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+</head>
+
+<body class="bank-page">
+    <header>
+        <h1 class="text-center text-5xl font-bold pb-10 pt-3"><span class="text-green-500">JS </span><span
+                class="text-red-500">Bank </span><span class="text-yellow-100">ATM</span></h1>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="deposit bg-blue-300 p-11 text-gray-100 rounded-md">
+                        <h2 class="text-3xl pb-2">Deposit:</h2>
+                        <h1 class="text-4xl font-semibold">$<span id="deposit-total">00</span></h1>
+                    </div>
+                    <div class="deposit bg-red-300 p-11 text-gray-100 rounded-md">
+                        <h2 class="text-3xl pb-2">Withdraw:</h2>
+                        <h1 class="text-4xl font-semibold">$<span id="withdraw-total">00</span></h1>
+                    </div>
+                    <div class="deposit bg-green-300 p-11 text-gray-100 rounded-md">
+                        <h2 class="text-3xl pb-2">Balance:</h2>
+                        <h1 class="text-4xl font-semibold">$<span id="balance-total">22000</span></h1>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 md:mb-0 mt-8">
+                    <div class="deposit bg-gray-800 grid p-5 md:p-14">
+                        <h2 class="text-4xl font-semibold text-gray-100 mb-6 text-center">Deposit:</h2>
+                        <input type="number" placeholder="Enter to deposite" class="py-3 block px-3" id="deposit-input"
+                            min="0">
+                        <button type="submit" class="bg-red-500 hover:bg-red-700 mt-7 py-3 text-gray-100"
+                            id="deposit-btn">Deposit</button>
+                    </div>
+                    <div class="withdraw bg-gray-800 grid p-5 md:p-14">
+                        <h2 class="text-4xl font-semibold text-gray-100 mb-6 text-center">Withdraw:</h2>
+                        <input type="number" placeholder="Enter to withdraw" class="py-3 block px-3" id="withdraw-input"
+                            min="0">
+                        <button type="submit" class="bg-red-500 hover:bg-red-700 mt-7 py-3 text-gray-100"
+                            id="withdraw-btn">Withdraw</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/bank.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Bank</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+</head>
+
+<body class="index-page">
+    <div class="container-fluid">
+        <header>
+            <h1 class="text-center text-5xl font-bold text-gray-100 py-10">Welcome to <span class="text-green-500">JS </span><span class="text-red-500">Bank</span></h1>
+        </header>
+        <div class="w-11/12 md:w-2/6 mx-auto bg-gray-800 grid p-7 md:p-16 relative mb-10">
+            <h2 class="text-3xl text-center text-gray-50 mb-10">Log in to continue</h2>
+            <input type="email" placeholder="Enter your email" class="py-3 block my-2 px-3" id="user-email">
+            <input type="password" placeholder="Enter your password" class="py-3 block my-2 px-3" id="user-password">
+            <button type="submit" class="bg-red-500 hover:bg-red-700 mt-7 py-3 text-gray-100" id="login-btn">Login</button>
+            <p class="text-center text-gray-100 mt-5">Forgot Password? <a href="pw-generator.html" class="italic text-blue-400">Click Here</a></p>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

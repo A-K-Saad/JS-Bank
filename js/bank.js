@@ -110,3 +110,10 @@ withdrawBtn.addEventListener("click", function () {
     updateTotal(withdrawTotal, withdrawInput);
     updateBalance(withdrawInput, false);
 });
+
+//Clearing all data
+function removeData() {
+    localStorage.removeItem("userEmail");
+    localStorage.removeItem("userPassword");
+    window.location.href = "index.html";
+}

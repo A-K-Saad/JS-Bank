@@ -1,20 +1,20 @@
+body{
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background-attachment: fixed!important;
+    background-position: center!important;
+}
 .index-page{
     background: radial-gradient(#17c47380, #00000099), url(images/bg-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+}
+.signup-page{
+    background: url(https://img.freepik.com/free-vector/money-transfer-background_115579-660.jpg?size=626&ext=jpg);
 }
 .bank-page{
     background: radial-gradient(#17c47380, #000000ea), url(images/bg-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 .pw-page{
     background: radial-gradient(#17c47380, #000000ea), url(images/bg-3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 .container{
     width: 80%;

@@ -1,4 +1,4 @@
-document.getElementById("login-btn").addEventListener("click", function () {
+/* document.getElementById("login-btn").addEventListener("click", function () {
     //Getting user's email
     const emailField = document.getElementById("user-email");
     const userEmail = emailField.value;
@@ -29,4 +29,37 @@ document.getElementById("login-btn").addEventListener("click", function () {
     else {
         alert("Invalid password")
     }
+}); */
+const signedUserEmail = localStorage.getItem("userEmail");
+const signedUserPassword = localStorage.getItem("userPassword");
+const userEmail = document.getElementById("user-email");
+const userPassword = document.getElementById("user-password");
+
+document.getElementById("login-btn").addEventListener("click", function () {
+    if (userEmail.value == signedUserEmail && userPassword.value == signedUserPassword) {
+        window.location.href = "bank.html";
+        userEmail.value = "";
+        userPassword.value = "";
+    }
+    else if (userEmail.value = "" || userPassword.value == "") {
+        alert("Please, fill in the fields!");
+        userEmail.value = "";
+        userPassword.value = "";
+    }
+    /* else if (signedUserEmail == "" || signedUserPassword == "") {
+        alert("User Not Found! Please Sign Up to continue!");
+        userEmail.value = "";
+        userPassword.value = "";
+    } */
+    else {
+        alert("Invalid Email and Password!");
+        userEmail.value = "";
+        userPassword.value = "";
+    }
 });
+
+function forgotPassword() {
+    if (signedUserPassword != "") {
+        alert(`Your Password is (-- ${signedUserPassword} --)`);
+    }
+}

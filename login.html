@@ -11,27 +11,28 @@
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
 </head>
 
-<body class="signup-page">
+<body class="index-page">
     <div class="container-fluid">
         <header>
-            <h1 class="text-center text-5xl font-bold text-yellow-100 py-10">Welcome to <span class="text-green-500">JS
+            <h1 class="text-center text-5xl font-bold text-gray-100 pt-8 pb-10">Welcome to <span class="text-green-500">JS
                 </span><span class="text-red-500">Bank</span></h1>
         </header>
-        <div class="w-11/12 md:w-2/6 mx-auto bg-gray-800 grid p-7 md:p-16 relative mb-10">
-            <h2 class="text-3xl text-center text-gray-50 mb-10">Sign up to continue</h2>
+        <div class="w-11/12 md:w-2/6 mx-auto bg-gray-800 grid p-7 md:px-16 md:py-12 relative mb-10">
+            <h2 class="text-3xl text-center text-gray-50 mb-10">Log in to continue</h2>
             <form class="grid">
                 <input type="email" placeholder="Enter your email" class="py-3 block my-2 px-3" id="user-email"
                     required>
                 <input type="password" placeholder="Enter your password" class="py-3 block my-2 px-3" id="user-password"
                     required>
-                <button type="submit" class="bg-red-500 hover:bg-red-700 mt-7 py-3 text-gray-100"
-                    id="signup-btn">Sign UP</button>
+                <button class="bg-red-500 hover:bg-red-700 mt-7 py-3 text-gray-100" id="login-btn">Login</button>
             </form>
-            <p class="text-center text-gray-100 mt-5">Already Have and account? <a href="login.html"
-                    class="italic text-blue-400">Login</a></p>
+            <p class="text-center text-gray-100 mt-5 cursor-pointer">Forgot Password? <span class="italic text-blue-400" onclick="forgotPassword()">Click Here</span></p>
+            <p class="text-center text-gray-100 mt-2">Don't have account? <a href="index.html"
+                    class="italic text-blue-400">Create One</a></p>
         </div>
     </div>
-    <script src="js/signup.js"></script>
+
+    <script src="js/login.js"></script>
 </body>
 
 </html>

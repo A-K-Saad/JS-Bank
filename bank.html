@@ -9,10 +9,18 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/bf2572e12f.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bank-page">
     <header>
+        <div class="p-5 absolute right-0">
+            <div class="flex items-center cursor-pointer" onclick="removeData()">
+                <span class="bg-red-600 px-5 py-3 text-gray-50 rounded-l">Remove All Data</span><span
+                    class="bg-red-600 px-4 py-3 rounded-r-lg text-gray-50 text-2xl"><i
+                        class="fas fa-times-circle"></i></span>
+            </div>
+        </div>
         <h1 class="text-center text-5xl font-bold pb-10 pt-3"><span class="text-green-500">JS </span><span
                 class="text-red-500">Bank </span><span class="text-yellow-100">ATM</span></h1>
     </header>
@@ -30,7 +38,7 @@
                     </div>
                     <div class="deposit bg-green-300 p-11 text-gray-100 rounded-md">
                         <h2 class="text-3xl pb-2">Balance:</h2>
-                        <h1 class="text-4xl font-semibold">$<span id="balance-total">22000</span></h1>
+                        <h1 class="text-4xl font-semibold">$<span id="balance-total">12000</span></h1>
                     </div>
                 </div>
             </section>
